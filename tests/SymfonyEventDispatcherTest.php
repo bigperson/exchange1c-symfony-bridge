@@ -7,14 +7,14 @@
  */
 declare(strict_types=1);
 
-
 namespace Tests;
+
 use Bigperson\Exchange1C\Interfaces\EventInterface;
 use Bigperson\Exchange1CSymfonyBridge\SymfonyEventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
 /**
- * Class SymfonyEventDispatcherTest
+ * Class SymfonyEventDispatcherTest.
  */
 class SymfonyEventDispatcherTest extends TestCase
 {
@@ -22,7 +22,6 @@ class SymfonyEventDispatcherTest extends TestCase
     {
         $symfonyDispatcher = new EventDispatcher();
         $symfonyDispatcher->addListener('test event', function () {
-
         });
         $bridgeDispatcher = new SymfonyEventDispatcher($symfonyDispatcher);
         $event = $this->createMock(EventInterface::class);

@@ -7,19 +7,17 @@
  */
 declare(strict_types=1);
 
-
 namespace Bigperson\Exchange1CSymfonyBridge;
 
-use Bigperson\Exchange1C\Interfaces\EventInterface;
 use Bigperson\Exchange1C\Interfaces\EventDispatcherInterface as EventDispatcher;
+use Bigperson\Exchange1C\Interfaces\EventInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 /**
- * Class SymfonyEventDispatcher
+ * Class SymfonyEventDispatcher.
  */
 class SymfonyEventDispatcher implements EventDispatcher
 {
-
     /**
      * @var EventDispatcherInterface
      */
